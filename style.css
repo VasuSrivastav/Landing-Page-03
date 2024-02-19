@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "gilroy"; */
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  /* background-image: url(https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 0% 40%; */
+}
+#nav {
+  height: 50px;
+  width: 100%;
+  /* background: rgb(216, 128, 128); */
+  /* border-bottom: 2px solid ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 5px 30px 5px 30px;
+}
+
+#nav-right {
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 5px 30px 5px 30px;
+}
+#nav h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#nav i {
+  background-color: black;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+.menu {
+  display: none;
+}
+#nav-left i {
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 500;
+  /* border: 2px solid black; */
+}
+#center {
+  /* height: 40%; */
+  width: 100%;
+  /* background-color: rgb(111, 214, 119); */
+  padding: 15px 80px 0px 80px;
+}
+#center h1 {
+  /* font-size: 78px; */
+  font-size: 6vw;
+  font-weight: 100;
+  line-height: 5.5vw;
+  /* line-height: 80px; */
+
+  text-transform: capitalize;
+}
+#center-in {
+  height: 160px;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#center-in p {
+  /* font-size: 20px; */
+  font-size: 1.5vw;
+  font-weight: 500;
+  line-height: 2vw;
+  /* opacity: 80%; */
+}
+#right {
+  width: 20%;
+}
+.elem {
+  /* background-color: tomato; */
+  /* margin: 5px; */
+  padding: 12px 0 12px 0;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem i {
+  font-size: 25px;
+  font-weight: 900;
+  opacity: 0;
+}
+.elem:hover i {
+  opacity: 1;
+  /* background-color: red; */
+}
+/* 
+.elem:hover{
+    background-color: rgb(172, 118, 118);} */
+.elem:hover a {
+  /* background-color: rgb(243, 243, 165); */
+  /* background-color: rgb(142, 142, 142); */
+  /* background-color: rgb(243, 243, 243); */
+  /* .elem:hover a{ */
+  text-decoration: underline;
+  text-decoration-color: grey;
+  text-decoration-thickness: 1px;
+}
+.elem a {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px;
+}
+/* .elem:nth-child(3) {
+  background-color: #310c0c;
+  border-bottom: 2px solid black;
+} */
+#bottom {
+  height: 28.33%;
+  width: 100%;
+  background-color: salmon;
+  background-image: url(https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 0 45%;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    /* background: rgb(216, 128, 128); */
+    height: 50px;
+    padding: 5px 0px 5px 5px;
+  }
+
+  #nav h4 {
+    display: none;
+    /* font-size: 18px; */
+  }
+  #nav i {
+    font-size: 18px;
+    /* margin-left: 5px; */
+  }
+
+  #nav-left i:nth-child(1) {
+    display: none;
+  }
+  .menu {
+    display: initial;
+    font-size: 18px;
+  }
+  #center {
+    padding: 15px 20px;
+    /* background: #532424; */
+  }
+  #center h1 {
+    font-size: 10vw;
+    font-weight: 600;
+    line-height: 11vw;
+  }
+  #center-in {
+    height: 160px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #center-in p {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+  #right {
+    width: 27%;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+  }
+  .elem {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .elem:hover a {
+    text-decoration-color: olive;
+    text-decoration-thickness: 2px;
+  }
+  .elem a {
+    font-size: 13px;
+    text-wrap: nowrap;
+  }
+  #bottom {
+    height: 37.355%;
+    background-position: 0 60%;
+  }
+}
